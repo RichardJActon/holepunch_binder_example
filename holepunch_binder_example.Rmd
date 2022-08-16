@@ -1,0 +1,45 @@
+---
+title: "Binder Example"
+output: html_notebook
+---
+
+This is an example of using `binder` with the {holepunch} package for `R`
+
+```{r}
+library(holepunch)
+```
+
+The code below creates a `DESCRIPTION` file which, among other things, lists the R packages that are dependencies of this project (this is the same mechanism used by R packages to specify their dependencies). 
+
+By default the `DESCRIPTION` file is populated with the any packages that {holepunch} can find as being used in this project.
+
+```{r}
+write_compendium_description(
+	package = "Testing {holepunch} Dockerfile generation for R", 
+	description = "holepunch test ... "
+)
+```
+
+Checkout the contents of the `DESCRIPTION` file, you'll notice some placeholder text that you may wish to replace with the actual information about your project.
+
+```{r}
+git2r::init()
+git2r::remote_add(
+	name = "holepunch_binder_example",
+	url = "git@github.com:/RichardJActon/holepunch_binder_example.git"
+)
+```
+
+
+```{r}
+write_dockerfile(maintainer = "Richard J. Acton") 
+```
+
+```{r}
+generate_badge()
+```
+
+```{r}
+build_binder()
+```
+

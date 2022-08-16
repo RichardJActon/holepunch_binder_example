@@ -1,0 +1,19 @@
+Type: Compendium
+Package: Testing {holepunch} Dockerfile generation for
+    R
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.1
+Authors@R: 
+    person(given = "First",
+           family = "Last",
+           role = c("aut", "cre"),
+           email = "first.last@example.com")
+Description: holepunch test ... 
+License: What license it uses
+Depends: 
+    holepunch,
+    rmarkdown
+Remotes: 
+    karthik/holepunch
+Encoding: UTF-8
+LazyData: true
