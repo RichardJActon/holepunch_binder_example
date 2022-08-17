@@ -1,9 +1,5 @@
 "0","write_dockerfile(maintainer = ""Richard J. Acton"") 
 "
-"2","[32m✔[39m Setting active project to [34m'/home/richardjacton/Nextcloud2/Documents/babraham/code/binder_example'[39m"
-"1","[1]"
-"1"," FALSE"
-"1","
-"
-"2","Error: Cannot write a Dockerfile without a Git remote. Connect this to a git remote before generating a Dockerfile
+"2","Error in write_dockerfile(maintainer = ""Richard J. Acton"") : 
+  could not find function ""write_dockerfile""
 "

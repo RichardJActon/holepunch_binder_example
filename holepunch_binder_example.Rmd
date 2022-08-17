@@ -7,6 +7,7 @@ This is an example of using `binder` with the {holepunch} package for `R`
 
 ```{r}
 library(holepunch)
+library(usethis)
 ```
 
 The code below creates a `DESCRIPTION` file which, among other things, lists the R packages that are dependencies of this project (this is the same mechanism used by R packages to specify their dependencies). 
@@ -22,25 +23,26 @@ write_compendium_description(
 
 Checkout the contents of the `DESCRIPTION` file, you'll notice some placeholder text that you may wish to replace with the actual information about your project.
 
-```{r}
-git2r::init()
-git2r::remote_add(
-	name = "holepunch_binder_example",
-	url = "git@github.com:/RichardJActon/holepunch_binder_example.git"
-)
-git2r::add(path = "*")
-git2r::commit(message = "init")
-#git2r::branch_set_upstream(branch =  git2r::branches()$master, "master")
-git2r::push(
-	refspec = "refs/heads/master",
-	name = "holepunch_binder_example", set_upstream = TRUE,
-	credentials = git2r::cred_ssh_key(passphrase = getPass::getPass())
-)
-```
+instructions on initialisng the git repo and pushing ot github
 
+```{bash}
+git init
+git add -A
+git commit -am"init"
+git remote add git@github.com:/RichardJActon/holepunch_binder_example.git # ssh auth
+```
 
 ```{r}
 write_dockerfile(maintainer = "Richard J. Acton") 
+```
+
+Pick a licence under which you wish to share your code.
+Any code you make public should ideally be associated with a licence so that others know how they can use your work.
+I'm using the GPLv3 license for this project which means all derivative of this must be licensed the same way, a popular more permissive licence is the MIT with this people can use your code in differently licenced projects.
+The {usethis} package has a number of helper functions to make this easy.
+
+```{r}
+usethis::use_gpl3_license()
 ```
 
 ```{r}

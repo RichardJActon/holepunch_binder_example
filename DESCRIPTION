@@ -1,15 +1,14 @@
 Type: Compendium
-Package: Testing {holepunch} Dockerfile generation for
-    R
-Title: What the Package Does (One Line, Title Case)
+Package: Testing {holepunch} Dockerfile generation for R
+Title: Testing {holepunch} Dockerfile generation for R
 Version: 0.0.1
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Richard",
+           family = "Acton",
            role = c("aut", "cre"),
-           email = "first.last@example.com")
+           email = "Richard.Acton@babraham.ac.uk")
 Description: holepunch test ... 
-License: What license it uses
+License: GPL (>= 3)
 Depends: 
     holepunch,
     rmarkdown
@@ -17,3 +16,5 @@ Remotes:
     karthik/holepunch
 Encoding: UTF-8
 LazyData: true
+Imports: 
+    usethis
