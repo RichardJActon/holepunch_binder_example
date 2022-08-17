@@ -29,21 +29,37 @@ instructions on initialisng the git repo and pushing ot github
 git init
 git add -A
 git commit -am"init"
-git remote add git@github.com:/RichardJActon/holepunch_binder_example.git # ssh auth
+git remote add git@github.com:RichardJActon/holepunch_binder_example.git # ssh auth
 ```
 
 ```{r}
 write_dockerfile(maintainer = "Richard J. Acton") 
 ```
 
-Pick a licence under which you wish to share your code.
-Any code you make public should ideally be associated with a licence so that others know how they can use your work.
-I'm using the GPLv3 license for this project which means all derivative of this must be licensed the same way, a popular more permissive licence is the MIT with this people can use your code in differently licenced projects.
+Pick a license under which you wish to share your code.
+Any code you make public should ideally be associated with a license so that others know how they can use your work.
+I'm using the GPLv3 license for this project which means all derivative of this must be licensed the same way, a popular more permissive license is the MIT with this people can use your code in differently licensed projects.
 The {usethis} package has a number of helper functions to make this easy.
+You will note if you take a look at the `DESCRIPTION` file that the license is updated there as well as a copy of the license being written to `LICENSE.md`
 
 ```{r}
 usethis::use_gpl3_license()
 ```
+
+{usethis} also has helper functions for things like adding package dependencies.
+let's use {usethis} to add {usethis} as a dependency for this project.
+
+```{r}
+usethis::use_package("usethis")
+```
+
+Create a README.md file for the project to contain a description of it that will live on your repository's home page on github
+
+```{r}
+usethis::use_readme_md()
+```
+
+Add the Launch Rstudio binder badge to the README file so that people visitng your repo can launch your project in a container
 
 ```{r}
 generate_badge()
@@ -53,3 +69,6 @@ generate_badge()
 build_binder()
 ```
 
+# References
+
+see: https://github.com/karthik/holepunch

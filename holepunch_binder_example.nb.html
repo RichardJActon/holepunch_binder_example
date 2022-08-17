@@ -1766,8 +1766,9 @@ pre code {
 <p>This is an example of using <code>binder</code> with the {holepunch} package for <code>R</code></p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShob2xlcHVuY2gpXG5gYGAifQ== -->
-<pre class="r"><code>library(holepunch)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShob2xlcHVuY2gpXG5saWJyYXJ5KHVzZXRoaXMpXG5gYGAifQ== -->
+<pre class="r"><code>library(holepunch)
+library(usethis)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -1781,17 +1782,27 @@ pre code {
     description = &quot;holepunch test ... &quot;
 )</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRmluZGluZyBSIHBhY2thZ2UgZGVwZW5kZW5jaWVzIC4uLiBEb25lIVxuIn0= -->
-<pre><code>Finding R package dependencies ... Done!</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiRmluZGluZyBSIHBhY2thZ2UgZGVwZW5kZW5jaWVzIC4uLiBcbiJ9 -->
+<pre><code>Finding R package dependencies ... </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiUmVnaXN0ZXJlZCBTMyBtZXRob2RzIG92ZXJ3cml0dGVuIGJ5ICdodG1sdG9vbHMnOlxuICBtZXRob2QgICAgICAgICAgICAgICBmcm9tICAgICAgICAgXG4gIHByaW50Lmh0bWwgICAgICAgICAgIHRvb2xzOnJzdHVkaW9cbiAgcHJpbnQuc2hpbnkudGFnICAgICAgdG9vbHM6cnN0dWRpb1xuICBwcmludC5zaGlueS50YWcubGlzdCB0b29sczpyc3R1ZGlvXG4ifQ== -->
+<pre><code>Registered S3 methods overwritten by &#39;htmltools&#39;:
+  method               from         
+  print.html           tools:rstudio
+  print.shiny.tag      tools:rstudio
+  print.shiny.tag.list tools:rstudio</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiRG9uZSFcbiJ9 -->
+<pre><code>Done!</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-output-begin eyJkYXRhIjoicmVwbGFjaW5nIHByZXZpb3VzIGltcG9ydCDigJhsaWZlY3ljbGU6Omxhc3Rfd2FybmluZ3PigJkgYnkg4oCYcmxhbmc6Omxhc3Rfd2FybmluZ3PigJkgd2hlbiBsb2FkaW5nIOKAmHRpYmJsZeKAmXJlcGxhY2luZyBwcmV2aW91cyBpbXBvcnQg4oCYbGlmZWN5Y2xlOjpsYXN0X3dhcm5pbmdz4oCZIGJ5IOKAmHJsYW5nOjpsYXN0X3dhcm5pbmdz4oCZIHdoZW4gbG9hZGluZyDigJhwaWxsYXLigJlPdmVyd3JpdGUgcHJlLWV4aXN0aW5nIGZpbGUgJy4vREVTQ1JJUFRJT04nP1xuIn0= -->
 <pre><code>replacing previous import ‘lifecycle::last_warnings’ by ‘rlang::last_warnings’ when loading ‘tibble’replacing previous import ‘lifecycle::last_warnings’ by ‘rlang::last_warnings’ when loading ‘pillar’Overwrite pre-existing file &#39;./DESCRIPTION&#39;?</code></pre>
 <!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG4xOiBOb1xuMjogSSBhZ3JlZVxuMzogQWJzb2x1dGVseSBub3RcbiJ9 -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG4xOiBOZWdhdGl2ZVxuMjogRGVmaW5pdGVseVxuMzogTm9wZVxuIn0= -->
 <pre><code>
-1: No
-2: I agree
-3: Absolutely not</code></pre>
+1: Negative
+2: Definitely
+3: Nope</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuM1xuYGBgIn0= -->
 <pre class="r"><code>3</code></pre>
@@ -1805,27 +1816,30 @@ pre code {
 <p>instructions on initialisng the git repo and pushing ot github</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgYmFzaFxuZ2l0IGluaXRcbmdpdCBhZGQgLUFcbmdpdCBjb21taXQgLWFtXCJpbml0XCJcbmdpdCByZW1vdGUgYWRkIGdpdEBnaXRodWIuY29tOi9SaWNoYXJkSkFjdG9uL2hvbGVwdW5jaF9iaW5kZXJfZXhhbXBsZS5naXQgIyBzc2ggYXV0aFxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgYmFzaFxuZ2l0IGluaXRcbmdpdCBhZGQgLUFcbmdpdCBjb21taXQgLWFtXCJpbml0XCJcbmdpdCByZW1vdGUgYWRkIGdpdEBnaXRodWIuY29tOlJpY2hhcmRKQWN0b24vaG9sZXB1bmNoX2JpbmRlcl9leGFtcGxlLmdpdCAjIHNzaCBhdXRoXG5gYGAifQ== -->
 <pre class="bash"><code>git init
 git add -A
 git commit -am&quot;init&quot;
-git remote add git@github.com:/RichardJActon/holepunch_binder_example.git # ssh auth</code></pre>
+git remote add git@github.com:RichardJActon/holepunch_binder_example.git # ssh auth</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxud3JpdGVfZG9ja2VyZmlsZShtYWludGFpbmVyID0gXCJSaWNoYXJkIEouIEFjdG9uXCIpIFxuXG5gYGAifQ== -->
-<pre class="r"><code>write_dockerfile(maintainer = &quot;Richard J. Acton&quot;) 
-</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxud3JpdGVfZG9ja2VyZmlsZShtYWludGFpbmVyID0gXCJSaWNoYXJkIEouIEFjdG9uXCIpIFxuYGBgIn0= -->
+<pre class="r"><code>write_dockerfile(maintainer = &quot;Richard J. Acton&quot;) </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3IgaW4gd3JpdGVfZG9ja2VyZmlsZShtYWludGFpbmVyID0gXCJSaWNoYXJkIEouIEFjdG9uXCIpIDogXG4gIGNvdWxkIG5vdCBmaW5kIGZ1bmN0aW9uIFwid3JpdGVfZG9ja2VyZmlsZVwiXG4ifQ== -->
-<pre><code>Error in write_dockerfile(maintainer = &quot;Richard J. Acton&quot;) : 
-  could not find function &quot;write_dockerfile&quot;</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFRSVUVcbiJ9 -->
+<pre><code>[1] TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoi4oaSIE5BXG7ihpIgTG9ja2luZyBwYWNrYWdlcyBkb3duIGF0IDIwMjItMDgtMTdcbuKclCBEb2NrZXJmaWxlIGdlbmVyYXRlZCBhdCAuLy5iaW5kZXIvRG9ja2VyZmlsZVxuIn0= -->
+<pre><code>→ NA
+→ Locking packages down at 2022-08-17
+✔ Dockerfile generated at ./.binder/Dockerfile</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>Pick a licence under which you wish to share your code. Any code you make public should ideally be associated with a licence so that others know how they can use your work. I’m using the GPLv3 license for this project which means all derivative of this must be licensed the same way, a popular more permissive licence is the MIT with this people can use your code in differently licenced projects. The {usethis} package has a number of helper functions to make this easy.</p>
+<p>Pick a license under which you wish to share your code. Any code you make public should ideally be associated with a license so that others know how they can use your work. I’m using the GPLv3 license for this project which means all derivative of this must be licensed the same way, a popular more permissive license is the MIT with this people can use your code in differently licensed projects. The {usethis} package has a number of helper functions to make this easy. You will note if you take a look at the <code>DESCRIPTION</code> file that the license is updated there as well as a copy of the license being written to <code>LICENSE.md</code></p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudXNldGhpczo6dXNlX2dwbDNfbGljZW5zZSgpXG5gYGAifQ== -->
@@ -1833,11 +1847,39 @@ git remote add git@github.com:/RichardJActon/holepunch_binder_example.git # ssh 
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<p>{usethis} also has helper functions for things like adding package dependencies. let’s use {usethis} to add {usethis} as a dependency for this project.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudXNldGhpczo6dXNlX3BhY2thZ2UoXCJ1c2V0aGlzXCIpXG5cbmBgYCJ9 -->
+<pre class="r"><code>usethis::use_package(&quot;usethis&quot;)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoi4pyUIEFkZGluZyAndXNldGhpcycgdG8gSW1wb3J0cyBmaWVsZCBpbiBERVNDUklQVElPTuKAoiBSZWZlciB0byBmdW5jdGlvbnMgd2l0aCBgdXNldGhpczo6ZnVuKClgXG4ifQ== -->
+<pre><code>✔ Adding &#39;usethis&#39; to Imports field in DESCRIPTION• Refer to functions with `usethis::fun()`</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Create a README.md file for the project to contain a description of it that will live on your repository’s home page on github</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudXNldGhpczo6dXNlX3JlYWRtZV9tZCgpXG5cbmBgYCJ9 -->
+<pre class="r"><code>usethis::use_readme_md()
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoi4pyUIFdyaXRpbmcgJ1JFQURNRS5tZCfigKIgTW9kaWZ5ICdSRUFETUUubWQnXG4ifQ== -->
+<pre><code>✔ Writing &#39;README.md&#39;• Modify &#39;README.md&#39;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Add the Launch Rstudio binder badge to the README file so that people visitng your repo can launch your project in a container</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZ2VuZXJhdGVfYmFkZ2UoKVxuYGBgIn0= -->
 <pre class="r"><code>generate_badge()</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoi4pyUIEFkZGluZyBMYXVuY2ggUnN0dWRpbyBCaW5kZXIgYmFkZ2UgdG8gJ1JFQURNRS5tZCdcbiJ9 -->
+<pre><code>✔ Adding Launch Rstudio Binder badge to &#39;README.md&#39;</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
@@ -1845,11 +1887,27 @@ git remote add git@github.com:/RichardJActon/holepunch_binder_example.git # ssh 
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYnVpbGRfYmluZGVyKClcbmBgYCJ9 -->
 <pre class="r"><code>build_binder()</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiVGhlcmUgYXJlIHVuY29tbWl0dGVkIGZpbGVzIGluIHlvdXIgcmVwby4gVW50aWwgY29tbWl0dGVkIGFuZCBwdXNoZWQgdG8gR2l0SHViLCBCaW5kZXIgY2Fubm90IGJ1aWxkIGZyb20gdGhlc2UgZmlsZXMuIERvIHlvdSBzdGlsbCB3aXNoIHRvIGNvbnRpbnVlP1xuIn0= -->
+<pre><code>There are uncommitted files in your repo. Until committed and pushed to GitHub, Binder cannot build from these files. Do you still wish to continue?</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG4xOiBObyB3YXlcbjI6IEkgYWdyZWVcbjM6IEFic29sdXRlbHkgbm90XG4ifQ== -->
+<pre><code>
+1: No way
+2: I agree
+3: Absolutely not</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuM1xuYGBgIn0= -->
+<pre class="r"><code>3</code></pre>
+<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<div id="references" class="section level1">
+<h1>References</h1>
+<p>see: <a href="https://github.com/karthik/holepunch" class="uri">https://github.com/karthik/holepunch</a></p>
 <!-- rnb-text-end -->
+</div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiQmluZGVyIEV4YW1wbGUiCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KClRoaXMgaXMgYW4gZXhhbXBsZSBvZiB1c2luZyBgYmluZGVyYCB3aXRoIHRoZSB7aG9sZXB1bmNofSBwYWNrYWdlIGZvciBgUmAKCmBgYHtyfQpsaWJyYXJ5KGhvbGVwdW5jaCkKbGlicmFyeSh1c2V0aGlzKQpgYGAKClRoZSBjb2RlIGJlbG93IGNyZWF0ZXMgYSBgREVTQ1JJUFRJT05gIGZpbGUgd2hpY2gsIGFtb25nIG90aGVyIHRoaW5ncywgbGlzdHMgdGhlIFIgcGFja2FnZXMgdGhhdCBhcmUgZGVwZW5kZW5jaWVzIG9mIHRoaXMgcHJvamVjdCAodGhpcyBpcyB0aGUgc2FtZSBtZWNoYW5pc20gdXNlZCBieSBSIHBhY2thZ2VzIHRvIHNwZWNpZnkgdGhlaXIgZGVwZW5kZW5jaWVzKS4gCgpCeSBkZWZhdWx0IHRoZSBgREVTQ1JJUFRJT05gIGZpbGUgaXMgcG9wdWxhdGVkIHdpdGggdGhlIGFueSBwYWNrYWdlcyB0aGF0IHtob2xlcHVuY2h9IGNhbiBmaW5kIGFzIGJlaW5nIHVzZWQgaW4gdGhpcyBwcm9qZWN0LgoKYGBge3J9CndyaXRlX2NvbXBlbmRpdW1fZGVzY3JpcHRpb24oCglwYWNrYWdlID0gIlRlc3Rpbmcge2hvbGVwdW5jaH0gRG9ja2VyZmlsZSBnZW5lcmF0aW9uIGZvciBSIiwgCglkZXNjcmlwdGlvbiA9ICJob2xlcHVuY2ggdGVzdCAuLi4gIgopCmBgYAoKQ2hlY2tvdXQgdGhlIGNvbnRlbnRzIG9mIHRoZSBgREVTQ1JJUFRJT05gIGZpbGUsIHlvdSdsbCBub3RpY2Ugc29tZSBwbGFjZWhvbGRlciB0ZXh0IHRoYXQgeW91IG1heSB3aXNoIHRvIHJlcGxhY2Ugd2l0aCB0aGUgYWN0dWFsIGluZm9ybWF0aW9uIGFib3V0IHlvdXIgcHJvamVjdC4KCmluc3RydWN0aW9ucyBvbiBpbml0aWFsaXNuZyB0aGUgZ2l0IHJlcG8gYW5kIHB1c2hpbmcgb3QgZ2l0aHViCgpgYGB7YmFzaH0KZ2l0IGluaXQKZ2l0IGFkZCAtQQpnaXQgY29tbWl0IC1hbSJpbml0IgpnaXQgcmVtb3RlIGFkZCBnaXRAZ2l0aHViLmNvbTovUmljaGFyZEpBY3Rvbi9ob2xlcHVuY2hfYmluZGVyX2V4YW1wbGUuZ2l0ICMgc3NoIGF1dGgKYGBgCgpgYGB7cn0Kd3JpdGVfZG9ja2VyZmlsZShtYWludGFpbmVyID0gIlJpY2hhcmQgSi4gQWN0b24iKSAKYGBgCgpQaWNrIGEgbGljZW5jZSB1bmRlciB3aGljaCB5b3Ugd2lzaCB0byBzaGFyZSB5b3VyIGNvZGUuCkFueSBjb2RlIHlvdSBtYWtlIHB1YmxpYyBzaG91bGQgaWRlYWxseSBiZSBhc3NvY2lhdGVkIHdpdGggYSBsaWNlbmNlIHNvIHRoYXQgb3RoZXJzIGtub3cgaG93IHRoZXkgY2FuIHVzZSB5b3VyIHdvcmsuCkknbSB1c2luZyB0aGUgR1BMdjMgbGljZW5zZSBmb3IgdGhpcyBwcm9qZWN0IHdoaWNoIG1lYW5zIGFsbCBkZXJpdmF0aXZlIG9mIHRoaXMgbXVzdCBiZSBsaWNlbnNlZCB0aGUgc2FtZSB3YXksIGEgcG9wdWxhciBtb3JlIHBlcm1pc3NpdmUgbGljZW5jZSBpcyB0aGUgTUlUIHdpdGggdGhpcyBwZW9wbGUgY2FuIHVzZSB5b3VyIGNvZGUgaW4gZGlmZmVyZW50bHkgbGljZW5jZWQgcHJvamVjdHMuClRoZSB7dXNldGhpc30gcGFja2FnZSBoYXMgYSBudW1iZXIgb2YgaGVscGVyIGZ1bmN0aW9ucyB0byBtYWtlIHRoaXMgZWFzeS4KCmBgYHtyfQp1c2V0aGlzOjp1c2VfZ3BsM19saWNlbnNlKCkKYGBgCgpgYGB7cn0KZ2VuZXJhdGVfYmFkZ2UoKQpgYGAKCmBgYHtyfQpidWlsZF9iaW5kZXIoKQpgYGAKCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiQmluZGVyIEV4YW1wbGUiCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KClRoaXMgaXMgYW4gZXhhbXBsZSBvZiB1c2luZyBgYmluZGVyYCB3aXRoIHRoZSB7aG9sZXB1bmNofSBwYWNrYWdlIGZvciBgUmAKCmBgYHtyfQpsaWJyYXJ5KGhvbGVwdW5jaCkKbGlicmFyeSh1c2V0aGlzKQpgYGAKClRoZSBjb2RlIGJlbG93IGNyZWF0ZXMgYSBgREVTQ1JJUFRJT05gIGZpbGUgd2hpY2gsIGFtb25nIG90aGVyIHRoaW5ncywgbGlzdHMgdGhlIFIgcGFja2FnZXMgdGhhdCBhcmUgZGVwZW5kZW5jaWVzIG9mIHRoaXMgcHJvamVjdCAodGhpcyBpcyB0aGUgc2FtZSBtZWNoYW5pc20gdXNlZCBieSBSIHBhY2thZ2VzIHRvIHNwZWNpZnkgdGhlaXIgZGVwZW5kZW5jaWVzKS4gCgpCeSBkZWZhdWx0IHRoZSBgREVTQ1JJUFRJT05gIGZpbGUgaXMgcG9wdWxhdGVkIHdpdGggdGhlIGFueSBwYWNrYWdlcyB0aGF0IHtob2xlcHVuY2h9IGNhbiBmaW5kIGFzIGJlaW5nIHVzZWQgaW4gdGhpcyBwcm9qZWN0LgoKYGBge3J9CndyaXRlX2NvbXBlbmRpdW1fZGVzY3JpcHRpb24oCglwYWNrYWdlID0gIlRlc3Rpbmcge2hvbGVwdW5jaH0gRG9ja2VyZmlsZSBnZW5lcmF0aW9uIGZvciBSIiwgCglkZXNjcmlwdGlvbiA9ICJob2xlcHVuY2ggdGVzdCAuLi4gIgopCmBgYAoKQ2hlY2tvdXQgdGhlIGNvbnRlbnRzIG9mIHRoZSBgREVTQ1JJUFRJT05gIGZpbGUsIHlvdSdsbCBub3RpY2Ugc29tZSBwbGFjZWhvbGRlciB0ZXh0IHRoYXQgeW91IG1heSB3aXNoIHRvIHJlcGxhY2Ugd2l0aCB0aGUgYWN0dWFsIGluZm9ybWF0aW9uIGFib3V0IHlvdXIgcHJvamVjdC4KCmluc3RydWN0aW9ucyBvbiBpbml0aWFsaXNuZyB0aGUgZ2l0IHJlcG8gYW5kIHB1c2hpbmcgb3QgZ2l0aHViCgpgYGB7YmFzaH0KZ2l0IGluaXQKZ2l0IGFkZCAtQQpnaXQgY29tbWl0IC1hbSJpbml0IgpnaXQgcmVtb3RlIGFkZCBnaXRAZ2l0aHViLmNvbTpSaWNoYXJkSkFjdG9uL2hvbGVwdW5jaF9iaW5kZXJfZXhhbXBsZS5naXQgIyBzc2ggYXV0aApgYGAKCmBgYHtyfQp3cml0ZV9kb2NrZXJmaWxlKG1haW50YWluZXIgPSAiUmljaGFyZCBKLiBBY3RvbiIpIApgYGAKClBpY2sgYSBsaWNlbnNlIHVuZGVyIHdoaWNoIHlvdSB3aXNoIHRvIHNoYXJlIHlvdXIgY29kZS4KQW55IGNvZGUgeW91IG1ha2UgcHVibGljIHNob3VsZCBpZGVhbGx5IGJlIGFzc29jaWF0ZWQgd2l0aCBhIGxpY2Vuc2Ugc28gdGhhdCBvdGhlcnMga25vdyBob3cgdGhleSBjYW4gdXNlIHlvdXIgd29yay4KSSdtIHVzaW5nIHRoZSBHUEx2MyBsaWNlbnNlIGZvciB0aGlzIHByb2plY3Qgd2hpY2ggbWVhbnMgYWxsIGRlcml2YXRpdmUgb2YgdGhpcyBtdXN0IGJlIGxpY2Vuc2VkIHRoZSBzYW1lIHdheSwgYSBwb3B1bGFyIG1vcmUgcGVybWlzc2l2ZSBsaWNlbnNlIGlzIHRoZSBNSVQgd2l0aCB0aGlzIHBlb3BsZSBjYW4gdXNlIHlvdXIgY29kZSBpbiBkaWZmZXJlbnRseSBsaWNlbnNlZCBwcm9qZWN0cy4KVGhlIHt1c2V0aGlzfSBwYWNrYWdlIGhhcyBhIG51bWJlciBvZiBoZWxwZXIgZnVuY3Rpb25zIHRvIG1ha2UgdGhpcyBlYXN5LgpZb3Ugd2lsbCBub3RlIGlmIHlvdSB0YWtlIGEgbG9vayBhdCB0aGUgYERFU0NSSVBUSU9OYCBmaWxlIHRoYXQgdGhlIGxpY2Vuc2UgaXMgdXBkYXRlZCB0aGVyZSBhcyB3ZWxsIGFzIGEgY29weSBvZiB0aGUgbGljZW5zZSBiZWluZyB3cml0dGVuIHRvIGBMSUNFTlNFLm1kYAoKYGBge3J9CnVzZXRoaXM6OnVzZV9ncGwzX2xpY2Vuc2UoKQpgYGAKCnt1c2V0aGlzfSBhbHNvIGhhcyBoZWxwZXIgZnVuY3Rpb25zIGZvciB0aGluZ3MgbGlrZSBhZGRpbmcgcGFja2FnZSBkZXBlbmRlbmNpZXMuCmxldCdzIHVzZSB7dXNldGhpc30gdG8gYWRkIHt1c2V0aGlzfSBhcyBhIGRlcGVuZGVuY3kgZm9yIHRoaXMgcHJvamVjdC4KCmBgYHtyfQp1c2V0aGlzOjp1c2VfcGFja2FnZSgidXNldGhpcyIpCmBgYAoKQ3JlYXRlIGEgUkVBRE1FLm1kIGZpbGUgZm9yIHRoZSBwcm9qZWN0IHRvIGNvbnRhaW4gYSBkZXNjcmlwdGlvbiBvZiBpdCB0aGF0IHdpbGwgbGl2ZSBvbiB5b3VyIHJlcG9zaXRvcnkncyBob21lIHBhZ2Ugb24gZ2l0aHViCgpgYGB7cn0KdXNldGhpczo6dXNlX3JlYWRtZV9tZCgpCmBgYAoKQWRkIHRoZSBMYXVuY2ggUnN0dWRpbyBiaW5kZXIgYmFkZ2UgdG8gdGhlIFJFQURNRSBmaWxlIHNvIHRoYXQgcGVvcGxlIHZpc2l0bmcgeW91ciByZXBvIGNhbiBsYXVuY2ggeW91ciBwcm9qZWN0IGluIGEgY29udGFpbmVyCgpgYGB7cn0KZ2VuZXJhdGVfYmFkZ2UoKQpgYGAKCmBgYHtyfQpidWlsZF9iaW5kZXIoKQpgYGAKCiMgUmVmZXJlbmNlcwoKc2VlOiBodHRwczovL2dpdGh1Yi5jb20va2FydGhpay9ob2xlcHVuY2gK</div>
 
 
 

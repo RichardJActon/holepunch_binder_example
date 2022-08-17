@@ -1,5 +1,0 @@
-"0","write_dockerfile(maintainer = ""Richard J. Acton"") 
-"
-"2","Error in write_dockerfile(maintainer = ""Richard J. Acton"") : 
-  could not find function ""write_dockerfile""
-"

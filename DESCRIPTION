@@ -1,5 +1,5 @@
 Type: Compendium
-Package: Testing {holepunch} Dockerfile generation for R
+Package: testHolepunchDocker
 Title: Testing {holepunch} Dockerfile generation for R
 Version: 0.0.1
 Authors@R: 
