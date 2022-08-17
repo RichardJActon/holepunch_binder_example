@@ -1,4 +1,0 @@
-"0","git2r::add(""*"")
-"
-"2","Error in git2r::add(""*"") : 'path' must be a character vector
-"

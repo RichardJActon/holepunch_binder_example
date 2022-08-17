@@ -28,6 +28,14 @@ git2r::remote_add(
 	name = "holepunch_binder_example",
 	url = "git@github.com:/RichardJActon/holepunch_binder_example.git"
 )
+git2r::add(path = "*")
+git2r::commit(message = "init")
+#git2r::branch_set_upstream(branch =  git2r::branches()$master, "master")
+git2r::push(
+	refspec = "refs/heads/master",
+	name = "holepunch_binder_example", set_upstream = TRUE,
+	credentials = git2r::cred_ssh_key(passphrase = getPass::getPass())
+)
 ```
 
 
